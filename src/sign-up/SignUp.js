@@ -4,6 +4,7 @@ import '../App.css';
 import {FaRegEyeSlash} from "react-icons/fa";
 import { ImUser } from "react-icons/im";
 import { ImMail2 } from "react-icons/im";
+import SignIn from '../sign-in/SignIn';
 const SignUp = () => {
 
   return (
