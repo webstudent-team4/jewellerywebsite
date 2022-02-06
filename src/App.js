@@ -6,13 +6,13 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./navbar/Navbar";
 import Footer from "./footer/Footer";
 import Body from "./body/Body";
-import Nav from "./nav/Nav";
+
 const App = () => {
   return (
-    <div>
-      <br /> <br />
+
       <div>
-        <Nav />
+        <Navbar/>
+		<br/>
         <Routes>
           <Route path="/signup" element={<SignUp />} />
           <Route path="/" element={<SignIn />} />
@@ -20,8 +20,9 @@ const App = () => {
           <Route path="/footer" element={<Footer />} />
           <Route path="/" element={<Body />} />
         </Routes>
+		<Footer/>
       </div>
-    </div>
+ 
   );
 };
 
