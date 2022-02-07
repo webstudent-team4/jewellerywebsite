@@ -29,7 +29,7 @@ const SignUp = () => {
                         <label for="re-pass"><FaRegEyeSlash/></label>
                         <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
                     </div>
-                    <Link to="/SignIn" className='signup-image-link'>Already menber?</Link>
+                    <Link to="/signin" className='signup-image-link'>Already menber?</Link>
                     <div class="form-group form-button">
                         <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
                     </div>
