@@ -14,7 +14,7 @@ function Navbar() {
   const [coinsOpen, setCoinsOpen] = useState(false);
   return (
     <div>
-      <div className="topBar">
+      <div className="topBar" style={{zIndex:'50'}}>
         <div className="firstNavComponent">
           <div className="phoneIconWrapper">
             <svg
