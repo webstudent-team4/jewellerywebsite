@@ -207,7 +207,12 @@ figure {
   display: block;
   text-align: right;
 }
-
+.nav-link {
+  font-size: 14px;
+  color: #f5f8fa;
+  display: block;
+  text-align: right;
+}
 .term-service {
   font-size: 13px;
   color: #222;
