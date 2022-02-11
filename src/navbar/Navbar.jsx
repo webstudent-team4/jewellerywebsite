@@ -4,6 +4,7 @@ import CoinsPop from "./navbar-sub-components/CoinsPop";
 import CollectionsPop from "./navbar-sub-components/CollectionsPop";
 import EarringPop from "./navbar-sub-components/EarringPop";
 import RingPop from "./navbar-sub-components/RingPop";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [ringOpen, setRingOpen] = useState(false);
@@ -140,8 +141,8 @@ function Navbar() {
           </svg>
         </div>
         <div className="cartComponent">
-          <h1>Login</h1>
-          <h1>Register</h1>
+         <h1><Link to="/signin" className='nav-link'>Login </Link></h1>
+          <h1><Link to="/signup" className='nav-link'>Register</Link></h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="heartIcon"
