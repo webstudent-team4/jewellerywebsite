@@ -1,0 +1,27 @@
+.grid-container{
+    display:grid;
+    grid-row-gap:20px;
+    grid-column-gap: 20px ;
+    grid-template-columns: auto auto auto auto;
+}
+.grid-item a img{
+    border-radius: 0;
+}
+.view-more{
+    margin-top: 30px;;
+}
+.text-center{
+    text-align: center;
+}
+.view-more .viewmorelink{
+    font-size: 12px;
+    border: 1px solid #9e7922;
+    padding: 5px;
+    width: 195px;
+    display: inline-block;
+    text-align: center;
+    color: #9e7922;
+}
+.view-more a{
+    text-decoration: none;
+}

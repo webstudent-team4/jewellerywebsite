@@ -37,3 +37,10 @@ li a{
     flex-direction: row;
     justify-content: center;
 }
+.underline {
+    background: #9e7922;
+    width: 50px;
+    height: 1px;
+    display: block;
+    margin: 10px auto 25px;
+}

@@ -3,10 +3,11 @@ import './browseByCategory.css'
 
 function BrowseByCategory() {
     return (
-        <div>
+        <div className="mt w-95">
             <div className="center">
                 <h1>BROWSE BY CATEGORY</h1>
             </div>
+            <div className="underline"></div>
             <div className="categories">
                 <div className="row">
                     <div className="category col-xl-6">
