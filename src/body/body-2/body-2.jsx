@@ -5,6 +5,7 @@ import './body-2.css'
 import BrowseByCategory from './browse-by-category/browseByCategory';
 import Catalogue from './catalogue/catalogue';
 import TopCollections from './top-collections/top-collections';
+import Testimonials from './testimonials/testimonials';
 
 function body2() {
     return (
@@ -12,6 +13,7 @@ function body2() {
             <BrowseByCategory/>
             <Catalogue/>
             <TopCollections/>
+            <Testimonials/>
         </div>
     );
 }
