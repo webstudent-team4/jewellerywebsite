@@ -46,6 +46,33 @@ textarea:focus {
   -o-box-shadow: none !important;
   -ms-box-shadow: none !important;
 }
+input::-webkit-input-placeholder {
+  color: #999;
+}
+input::-moz-placeholder {
+  color: #999;
+}
+input:-ms-input-placeholder {
+  color: #999;
+}
+input:-moz-placeholder {
+  color: #999;
+}
+input:focus {
+  border-bottom: 1px solid rgb(50, 133, 241);
+}
+input:focus::-webkit-input-placeholder {
+  color: rgb(88, 137, 243);
+}
+input:focus::-moz-placeholder {
+  color: #222;
+}
+input:focus:-ms-input-placeholder {
+  color: #222;
+}
+input:focus:-moz-placeholder {
+  color: #222;
+}
 
 
 img {
@@ -82,7 +109,11 @@ h2 {
   width: 900px;
   background: #fff;
   margin: 0 auto;
-
+  box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -184,7 +215,7 @@ figure {
 }
 
 .signup-image-link {
-  font-size: 14px;
+  font-size: 17px;
   color: #6dabe4;
   display: block;
   text-align: right;
