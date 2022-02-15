@@ -9,7 +9,7 @@ const SignIn = () => {
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src="https://i.ibb.co/PCKn1X2/login.jpg" alt=" "/></figure>
+                        <figure><img id="optionalimg" src="https://i.ibb.co/PCKn1X2/login.jpg" alt=" "/></figure>
                     </div>
 
                     <div class="signin-form">
