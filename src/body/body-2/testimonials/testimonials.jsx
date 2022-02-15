@@ -22,7 +22,7 @@ export default class Testimonials extends Component {
                         interval={3100}
                     >
                         <div>
-                            <img src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" />
+                            <img src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" alt="" />
                             <div className="myCarousel">
                                 <h3>Shirley Fultz</h3>
                                 <h4>Designer</h4>
@@ -34,7 +34,7 @@ export default class Testimonials extends Component {
                         </div>
 
                         <div>
-                            <img src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" />
+                            <img src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" alt="" />
                             <div className="myCarousel">
                                 <h3>Daniel Keystone</h3>
                                 <h4>Designer</h4>
@@ -46,7 +46,7 @@ export default class Testimonials extends Component {
                         </div>
 
                         <div>
-                            <img src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" />
+                            <img src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" alt="" />
                             <div className="myCarousel">
                                 <h3>Theo Sorel</h3>
                                 <h4>Designer</h4>
@@ -57,7 +57,7 @@ export default class Testimonials extends Component {
                             </div>
                         </div>
                         <div>
-                            <img src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" />
+                            <img src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" alt="" />
                             <div className="myCarousel">
                                 <h3>Theo Sorel</h3>
                                 <h4>Designer</h4>
@@ -71,7 +71,7 @@ export default class Testimonials extends Component {
                 </div>
                 
             <div className="view-more text-center">
-                <a href="" className="active viewmorelink">View all Testimonials</a>
+                <a href="/" className="active viewmorelink">View all Testimonials</a>
             </div>
 
             </div>
