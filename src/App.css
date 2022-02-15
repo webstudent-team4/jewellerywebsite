@@ -1179,7 +1179,7 @@ label.valid:after {
 .hamburger {
   position: absolute;
   top: 8%;
-  left: 3%;
+  right: 3%;
   z-index: 100;
 }
 
@@ -1191,5 +1191,4 @@ label.valid:after {
 
 * { 
   margin: 0; 
-  box-sizing:border-box; 
 }
