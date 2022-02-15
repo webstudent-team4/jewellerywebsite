@@ -9,20 +9,18 @@ import Body from "./body/Body";
 
 const App = () => {
   return (
-
-      <div>
-        <Navbar/>
-		<br/>
-        <Routes>
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/navbar" element={<Navbar />} />
-          <Route path="/footer" element={<Footer />} />
-          <Route path="/" element={<Body />} />
-        </Routes>
-		<Footer/>
-      </div>
- 
+    <div>
+      <Navbar />
+      <br />
+      <Routes style={{ marginTop: "200px" }}>
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/navbar" element={<Navbar />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/" element={<Body />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 };
 
