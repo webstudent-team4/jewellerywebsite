@@ -56,7 +56,6 @@ function Footer() {
         </svg>
         <div>
           <h4>PCJ STORE LOCATOR</h4>
-           <br/>
           <h6>Find Store</h6>
         </div>
       </div>
