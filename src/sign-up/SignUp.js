@@ -35,7 +35,7 @@ const SignUp = () => {
                 </form>
             </div>
             <div class="signup-image">
-                <figure><img src="https://i.ibb.co/PCKn1X2/login.jpg" alt="sing up image"/></figure>
+                <figure><img src="https://i.ibb.co/PCKn1X2/login.jpg" alt=""/></figure>
                
             </div>
         </div>
