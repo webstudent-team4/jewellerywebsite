@@ -14,8 +14,8 @@ function Navbar() {
   const [allJewelleryOpen, setAllJewelleryOpen] = useState(false);
   const [coinsOpen, setCoinsOpen] = useState(false);
   return (
-    <div>
-      <div className="topBar" style={{zIndex:'50'}}>
+    <div style={{zIndex:'100',position:'fixed', width:'100%'}}>
+      <div className="topBar" style={{ zIndex: "100" }}>
         <div className="firstNavComponent">
           <div className="phoneIconWrapper">
             <svg
@@ -113,7 +113,34 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className="midBar">
+      <div className="hamburger">
+        <div class="hamburger-menu" >
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box" style={{width:'100%', opacity:'0.98'}}>
+            <li>
+              <a class="menu__item" href="/signup">
+                Sign Up Now
+              </a>
+            </li>
+            <li>
+              <a class="menu__item" href="/signin">
+                Sign In as Existing User
+              </a>
+            </li>
+            <li>
+              <a class="menu__item" href="#">
+                Cart Items
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div className="midBar" >
         <div className="brandLogo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -141,8 +168,16 @@ function Navbar() {
           </svg>
         </div>
         <div className="cartComponent">
-         <h1><Link to="/signin" className='nav-link'>Login </Link></h1>
-          <h1><Link to="/signup" className='nav-link'>Register</Link></h1>
+          <h1>
+            <Link to="/signin" className="nav-link">
+              Login{" "}
+            </Link>
+          </h1>
+          <h1>
+            <Link to="/signup" className="nav-link">
+              Register
+            </Link>
+          </h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="heartIcon"
@@ -174,212 +209,217 @@ function Navbar() {
           <div className="counter">0</div>
         </div>
       </div>
-      <div className="bottomBar">
-    
-          <div
-            className="NavPopParent"
-            onMouseEnter={() => setRingOpen(true)}
-            onMouseLeave={() => setRingOpen(false)}
+      <div className="bottomBar" >
+        <div
+          className="NavPopParent"
+          onMouseEnter={() => setRingOpen(true)}
+          onMouseLeave={() => setRingOpen(false)}
+        >
+          <h1>RINGS</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <h1>RINGS</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-            <div className="NavPopChild">{ringOpen && <RingPop />}</div>
-          </div>
-          <div
-            className="NavPopParent"
-            onMouseEnter={() => setEarringOpen(true)}
-            onMouseLeave={() => setEarringOpen(false)}
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <div className="NavPopChild">{ringOpen && <RingPop />}</div>
+        </div>
+        <div
+          className="NavPopParent"
+          onMouseEnter={() => setEarringOpen(true)}
+          onMouseLeave={() => setEarringOpen(false)}
+        >
+          <h1>EARRINGS</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <h1>EARRINGS</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-            <div className="NavPopChild earWrap">{earringOpen && <EarringPop />}</div>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <div className="NavPopChild earWrap">
+            {earringOpen && <EarringPop />}
           </div>
-          <div
-            className="NavPopParent"
-            onMouseEnter={() => setBestSellerOpen(true)}
-            onMouseLeave={() => setBestSellerOpen(false)}
+        </div>
+        <div
+          className="NavPopParent"
+          onMouseEnter={() => setBestSellerOpen(true)}
+          onMouseLeave={() => setBestSellerOpen(false)}
+        >
+          <h1>BEST SELLERS</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <h1>BEST SELLERS</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-            <div className="NavPopChild bestWrap">
-              {bestSellerOpen && <BestSellerPop />}
-            </div>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <div className="NavPopChild bestWrap">
+            {bestSellerOpen && <BestSellerPop />}
           </div>
-          <div
-            className="NavPopParent"
-            onMouseEnter={() => setAllJewelleryOpen(true)}
-            onMouseLeave={() => setAllJewelleryOpen(false)}
+        </div>
+        <div
+          className="NavPopParent"
+          onMouseEnter={() => setAllJewelleryOpen(true)}
+          onMouseLeave={() => setAllJewelleryOpen(false)}
+        >
+          <h1>ALL JEWELLERY</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <h1>ALL JEWELLERY</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-            <div className="NavPopChild allWrap">{allJewelleryOpen && <RingPop />}</div>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <div className="NavPopChild allWrap">
+            {allJewelleryOpen && <RingPop />}
           </div>
-          <div
-            className="NavPopParent"
-            onMouseEnter={() => setCollectionsOpen(true)}
-            onMouseLeave={() => setCollectionsOpen(false)}
+        </div>
+        <div
+          className="NavPopParent"
+          onMouseEnter={() => setCollectionsOpen(true)}
+          onMouseLeave={() => setCollectionsOpen(false)}
+        >
+          <h1>COLLECTIONS</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <h1>COLLECTIONS</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-            <div className="NavPopChild collWrap">
-              {collectionsOpen && <CollectionsPop />}
-            </div>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <div className="NavPopChild collWrap">
+            {collectionsOpen && <CollectionsPop />}
           </div>
-          <div>
-            <h1>READY TO SHIP</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </div>
-          <div>
-            <h1>GOLD CHAINS</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </div>
-          <div>
-            <h1>SILVER</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </div>
-          <div
-            className="NavPopParent"
-            onMouseEnter={() => setCoinsOpen(true)}
-            onMouseLeave={() => setCoinsOpen(false)}
+        </div>
+        <div>
+          <h1>READY TO SHIP</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <h1>COINS</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-            <div className="NavPopChild coinWrap">{coinsOpen && <CoinsPop />}</div>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+        <div>
+          <h1>GOLD CHAINS</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+        <div>
+          <h1>SILVER</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+        <div
+          className="NavPopParent"
+          onMouseEnter={() => setCoinsOpen(true)}
+          onMouseLeave={() => setCoinsOpen(false)}
+        >
+          <h1>COINS</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <div className="NavPopChild coinWrap">
+            {coinsOpen && <CoinsPop />}
           </div>
-          <button className="navButton">
-            DIGITAL GOLD
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="chevronIcon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
+        </div>
+        <button className="navButton">
+          DIGITAL GOLD
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="chevronIcon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   );
