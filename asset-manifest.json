@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jewellerywebsite/static/css/main.b943334d.css",
+    "main.js": "/jewellerywebsite/static/js/main.fc50c7b3.js",
+    "index.html": "/jewellerywebsite/index.html",
+    "main.b943334d.css.map": "/jewellerywebsite/static/css/main.b943334d.css.map",
+    "main.fc50c7b3.js.map": "/jewellerywebsite/static/js/main.fc50c7b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b943334d.css",
+    "static/js/main.fc50c7b3.js"
+  ]
+}
