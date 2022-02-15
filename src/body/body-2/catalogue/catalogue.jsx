@@ -20,8 +20,8 @@ function Catalogue() {
                     <div className="one">
                         <div className="col-xs-100 cl-section">
                             <figure>
-                                <a href="">
-                                    <img alt height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" />
+                                <a href="/">
+                                    <img alt=" " height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" />
                                 </a>
                             </figure>
                             <h2>Diamond Jwellery</h2>
@@ -29,7 +29,7 @@ function Catalogue() {
                         <div className="col-xs-100 cl-section">
                             <figure>
                                 <a href="">
-                                    <img alt height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/gold-jewellery.jpg" />
+                                    <img alt=" "  height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/gold-jewellery.jpg" />
                                 </a>
                             </figure>
                             <h2>Gold Jwellery</h2>
@@ -40,7 +40,7 @@ function Catalogue() {
                         <div className="col-xs-100 cl-section">
                             <figure>
                                 <a href="">
-                                    <img alt height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/gold-jewellery.jpg" />
+                                    <img alt=" "  height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/gold-jewellery.jpg" />
                                 </a>
                             </figure>
                             <h2>Gold Jwellery</h2>
@@ -48,7 +48,7 @@ function Catalogue() {
                         <div className="col-xs-100 cl-section">
                             <figure>
                                 <a href="">
-                                    <img alt height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" />
+                                    <img alt=" "  height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" />
                                 </a>
                             </figure>
                             <h2>Diamond Jwellery</h2>
