@@ -132,7 +132,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a class="menu__item" href="#">
+              <a class="menu__item" href="/">
                 Cart Items
               </a>
             </li>
