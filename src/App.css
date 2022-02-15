@@ -411,6 +411,9 @@ label.valid:after {
     -o-justify-content: center;
     -ms-justify-content: center;
   }
+  img#optionalimg{
+  display:none;
+  }
 
   .signup-form {
     margin-left: 0px;
