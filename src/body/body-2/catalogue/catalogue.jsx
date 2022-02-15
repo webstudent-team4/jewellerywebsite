@@ -12,7 +12,7 @@ function Catalogue() {
                 <div className="col-xs-6 cl-section">
                     <figure>
                         <a href="/">
-                            <img className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/all-jewel.jpg" height="250" alt />
+                            <img className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/all-jewel.jpg" height="250" alt=""/>
                         </a>
                     </figure>
                 </div>
@@ -28,7 +28,7 @@ function Catalogue() {
                         </div>
                         <div className="col-xs-100 cl-section">
                             <figure>
-                                <a href="">
+                                <a href="/">
                                     <img alt=""  height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/gold-jewellery.jpg" />
                                 </a>
                             </figure>
@@ -39,7 +39,7 @@ function Catalogue() {
 
                         <div className="col-xs-100 cl-section">
                             <figure>
-                                <a href="">
+                                <a href="/">
                                     <img alt="" height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/gold-jewellery.jpg" />
                                 </a>
                             </figure>
@@ -47,7 +47,7 @@ function Catalogue() {
                         </div>
                         <div className="col-xs-100 cl-section">
                             <figure>
-                                <a href="">
+                                <a href="/">
                                     <img alt=""  height="250" width="500" className="img-responsive" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/catalogue/diamond-jewellery.jpg" />
                                 </a>
                             </figure>
